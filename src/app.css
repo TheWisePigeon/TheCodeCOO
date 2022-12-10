@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    @apply bg-black text-gray-100 ;
+    font-family: Vanilla;
+}
+
+@font-face{
+    font-family: Vanilla;
+    src: url('Vanilla.ttf');
+}

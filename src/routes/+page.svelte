@@ -1,1 +1,0 @@
-<p class=" bg-red-700" >Sup cuh</p>
