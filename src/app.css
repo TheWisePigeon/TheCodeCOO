@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body{
-    @apply bg-black text-gray-100 ;
-    font-family: Vanilla;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
-@font-face{
-    font-family: Vanilla;
-    src: url('Vanilla.ttf');
+body::-webkit-scrollbar{
+    display: none;
 }
