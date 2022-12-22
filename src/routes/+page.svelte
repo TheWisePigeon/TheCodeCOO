@@ -1,7 +1,16 @@
 <script lang="ts" >
 	import { browser } from "$app/environment";
     import { onMount } from "svelte";
-
+    let randomizedText: string
+    const values = ["developer", "designer", "meme enjoyer"]
+    let index = 0
+    setInterval(()=>{
+        randomizedText=values[index]
+        index++
+        if(index==3){
+            index=0
+        }
+    }, 1500)
     // onMount(()=>{
     //     if (browser){
     //         if (!localStorage.getItem("subbed")){
@@ -11,21 +20,18 @@
     // })
 </script>
 
-
-<header class=" flex justify-between items-center ">
-    <a class=" font-bold text-2xl flex" href="/" >
-        The Code Coo
-        <img src="/pigeon.png" alt="" class=" w-10 h-10 animate-bounce">
+<header class=" flex justify-between items-center p-3 h-24 backdrop-blur-md sticky top-0 border-b-2" >
+    <h1 class=" font-bold " >TheCodeCoo</h1>
+    <a href="/posts" class=" hover:underline">
+        <h1>Posts</h1>
     </a>
-    <div class=" flex gap-10" >
-        <a class=" hover:underline font-semibold" href="/subscribe" >
-            <h1>Subscribe</h1>
-        </a>
-        <a class=" hover:underline font-semibold" href="/about" >
-            <h1>About</h1>
-        </a>
-    </div>
+    <a href="#sub" class=" hover:underline">
+        <h1>Subscribe</h1>
+    </a>
 </header>
-<main class=" h-screen" >
-    
+<main class=" h-screen mt-20 px-3">
+    <h1 class=" text-3xl font-bold">Coocoo visitor :) </h1>
+    <h1 class=" text-xl">Are you a <h1 class=" inline " >{randomizedText}</h1> ?</h1>
+    <h1 class=" text-xl">Are you interested in <h1 class=" inline " >{randomizedText}</h1> ?</h1>
+    <h1 class=" text-xl">Are you interested in <h1 class=" inline " >{randomizedText}</h1> ?</h1>
 </main>
