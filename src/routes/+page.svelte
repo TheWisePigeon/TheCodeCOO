@@ -30,8 +30,8 @@
     </a>
 </header>
 <main class=" h-screen mt-20 px-3">
-    <h1 class=" text-3xl font-bold">Coocoo visitor :) </h1>
-    <h1 class=" text-xl">Are you a <h1 class=" inline " >{randomizedText}</h1> ?</h1>
-    <h1 class=" text-xl">Are you interested in <h1 class=" inline " >{randomizedText}</h1> ?</h1>
-    <h1 class=" text-xl">Are you interested in <h1 class=" inline " >{randomizedText}</h1> ?</h1>
+    <h1 class=" text-3xl font-bold">Coocoo fellow developer! </h1>
+    <h1 class=" text-xl" >Welcome to The Code Coo, a fun newsletter focused on web development and great memes stolen from the internet.</h1>    
+    <h1 class=" text-xl">I am  <a href="https://github.com/TheWisePigeon" class=" text-yellow-400 underline">The Wise Pigeon</a> and here is a short list 
+    of the spicy stuff you will be getting from the coop</h1>
 </main>
